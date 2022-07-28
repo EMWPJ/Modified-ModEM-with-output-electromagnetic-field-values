@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{73F1384B-EC2A-4C92-BD43-D9858CF1BC3F}">
+	<Platforms>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" Preprocess="preprocessYes" AdditionalIncludeDirectories="C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2020.0.164\windows\mkl\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2020.0.164\windows\mkl\include\intel64;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2020.0.164\windows\mpi\intel64\include;D:\Fortran\ModEM_Win64\ModEM\3D_MT\modelParam" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" UseMkl="mklParallel"/>
+				<Tool Name="VFLinkerTool" AdditionalLibraryDirectories="C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2020.0.164\windows\mkl\lib\intel64_win" GenerateDebugInformation="true" SubSystem="subSystemConsole" HeapReserveSize="2000000000" HeapCommitSize="2000000000" StackReserveSize="2000000000" StackCommitSize="2000000000" LargeAddressAware="addrAwareLarge" AdditionalDependencies="mkl_blas95_lp64.lib mkl_lapack95_lp64.lib mkl_intel_lp64.lib mkl_sequential.lib mkl_core.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" Optimization="optimizeFull" Parallelization="true" MatrixLibrary="mlYes" Preprocess="preprocessYes" AdditionalIncludeDirectories="C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2020.0.164\windows\mkl\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2020.0.164\windows\mkl\include\intel64;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2020.0.164\windows\mpi\intel64\include;D:\Fortran\ModEM_Win64\ModEM\3D_MT\modelParam" UseMkl="mklParallel"/>
+				<Tool Name="VFLinkerTool" AdditionalLibraryDirectories="C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2020.0.164\windows\mkl\lib\intel64_win" GenerateDebugInformation="true" SubSystem="subSystemConsole" HeapReserveSize="2000000000" HeapCommitSize="2000000000" StackReserveSize="2000000000" StackCommitSize="2000000000" LargeAddressAware="addrAwareLarge" AdditionalDependencies="mkl_blas95_lp64.lib mkl_lapack95_lp64.lib mkl_intel_lp64.lib mkl_sequential.lib mkl_core.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd;h;inc"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<Filter Name="3D_MT">
+		<Filter Name="DICT">
+		<File RelativePath=".\3D_MT\DICT\dataTypes.f90"/>
+		<File RelativePath=".\3D_MT\DICT\receivers.f90"/>
+		<File RelativePath=".\3D_MT\DICT\transmitters.f90"/></Filter>
+		<Filter Name="FWD">
+		<Filter Name="Mod2d">
+		<File RelativePath=".\3D_MT\FWD\Mod2d\FwdTEmod.f90"/>
+		<File RelativePath=".\3D_MT\FWD\Mod2d\WSfwd1Dmod.f90"/>
+		<File RelativePath=".\3D_MT\FWD\Mod2d\WSfwd2Dmod.f90"/>
+		<File RelativePath=".\3D_MT\FWD\Mod2d\WSfwd2Dpar.f90"/>
+		<File RelativePath=".\3D_MT\FWD\Mod2d\WSutils.f90"/></Filter>
+		<File RelativePath=".\3D_MT\FWD\boundary_ws.f90"/>
+		<File RelativePath=".\3D_MT\FWD\EMsolve3D.f90"/>
+		<File RelativePath=".\3D_MT\FWD\modelOperator3D.f90"/>
+		<File RelativePath=".\3D_MT\FWD\nestedEM.f90"/>
+		<File RelativePath=".\3D_MT\FWD\solver.f90"/></Filter>
+		<Filter Name="ioMod">
+		<File RelativePath=".\3D_MT\ioMod\ioAscii.f90"/></Filter>
+		<Filter Name="modelParam">
+		<Filter Name="modelCov"/>
+		<Filter Name="modelParamIO"/>
+		<File RelativePath=".\3D_MT\modelParam\ModelSpace.f90"/></Filter>
+		<File RelativePath=".\3D_MT\DataFunc.f90"/>
+		<File RelativePath=".\3D_MT\DataIO.f90"/>
+		<File RelativePath=".\3D_MT\EMfieldInterp.f90"/>
+		<File RelativePath=".\3D_MT\ForwardSolver.f90"/>
+		<File RelativePath=".\3D_MT\GridCalc.f90"/>
+		<File RelativePath=".\3D_MT\GridDef.f90"/>
+		<File RelativePath=".\3D_MT\Main.f90"/>
+		<File RelativePath=".\3D_MT\MPI_sub.f90"/>
+		<File RelativePath=".\3D_MT\SolnSpace.f90"/>
+		<File RelativePath=".\3D_MT\SolverSens.f90"/></Filter>
+		<Filter Name="FIELDS">
+		<Filter Name="FiniteDiff3D">
+		<File RelativePath=".\FIELDS\FiniteDiff3D\sg_boundary.f90"/>
+		<File RelativePath=".\FIELDS\FiniteDiff3D\sg_diff_oper.f90"/>
+		<File RelativePath=".\FIELDS\FiniteDiff3D\sg_scalar.f90"/>
+		<File RelativePath=".\FIELDS\FiniteDiff3D\sg_sparse_vector.f90"/>
+		<File RelativePath=".\FIELDS\FiniteDiff3D\sg_vector.f90"/></Filter></Filter>
+		<Filter Name="INV">
+		<File RelativePath=".\INV\DCG.f90"/>
+		<File RelativePath=".\INV\NLCG.f90"/></Filter>
+		<Filter Name="MPI">
+		<File RelativePath=".\MPI\MPI_declaration.f90"/>
+		<File RelativePath=".\MPI\MPI_main.f90"/></Filter>
+		<Filter Name="SENS">
+		<File RelativePath=".\SENS\DataSens.f90"/>
+		<File RelativePath=".\SENS\DataSpace.f90"/>
+		<File RelativePath=".\SENS\SensComp.f90"/>
+		<File RelativePath=".\SENS\SensMatrix.f90"/>
+		<File RelativePath=".\SENS\SymmetryTest.f90"/></Filter>
+		<Filter Name="UTILS">
+		<File RelativePath=".\UTILS\file_units.f90"/>
+		<File RelativePath=".\UTILS\math_constants.f90"/>
+		<File RelativePath=".\UTILS\utilities.f90"/></Filter>
+		<File RelativePath=".\Mod3DMT.f90"/>
+		<File RelativePath=".\UserCtrl.f90"/></Filter></Files>
+	<Globals/></VisualStudioProject>

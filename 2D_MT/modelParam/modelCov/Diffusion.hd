@@ -1,0 +1,30 @@
+!-------------------------------------------------------------------!
+! 2D_MT model covariance by Weerachai Siripunvaraporn: definitions. !
+!-------------------------------------------------------------------!
+
+! 1) modelCov_t data type with private attributes
+
+  type :: modelCov_t
+
+    private
+
+    real (kind=prec) :: ylen = R_ZERO
+    real (kind=prec) :: zlen = R_ZERO
+    real (kind=prec), pointer, dimension(:,:,:)   ::  YDIF
+    real (kind=prec), pointer, dimension(:,:,:)   ::  ZDIF
+    logical                  :: allocated
+
+  end type
+
+! 2) CmSqrt (an instance of modelCov_t), saved and private to the modelParam module
+
+  type (modelCov_t), private, save      ::  CmSqrt
+
+! 3) public procedures to create, deallocate and multiply by CmSqrt
+
+  public    :: create_CmSqrt, deall_CmSqrt, multBy_CmSqrt
+
+! 4) any private procedures required for the model covariance
+
+  private   :: setup1DCM, setupYCM, setupZCM
+  private   :: solveDiff, yDiff, zDiff

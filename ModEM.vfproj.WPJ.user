@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioUserFile ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{73F1384B-EC2A-4C92-BD43-D9858CF1BC3F}">
+	<Configurations>
+		<Configuration Name="Debug|x64" CommandArguments="-F TEST4.MODmodEM TEST4.modemdat Test4.ModEMDat TEST4.E  TEST4.modempar" WorkingDirectory="D:\Codes\GMT\Test4"/>
+		<Configuration Name="Release|x64" CommandArguments="-F TEST4.MODmodEM TEST4.modemdat Test4.ModEMDat TEST4.E  TEST4.modempar" WorkingDirectory="D:\Codes\GMT\Test4"/></Configurations></VisualStudioUserFile>
