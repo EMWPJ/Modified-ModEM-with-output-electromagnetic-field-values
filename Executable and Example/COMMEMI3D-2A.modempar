@@ -1,0 +1,6 @@
+Number of QMR iters per divergence correction : 100
+Maximum number of divergence correction calls : 50
+Maximum number of divergence correction iters : 200
+Misfit tolerance for EM forward solver        : 1.0e-12
+Misfit tolerance for EM adjoint solver        : 1.0e-12
+Misfit tolerance for divergence correction    : 1.0e-10

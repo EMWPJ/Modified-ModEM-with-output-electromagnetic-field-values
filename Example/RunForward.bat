@@ -1,1 +1,0 @@
- .\ModEM.exe -F .\COMMEMI3D-2A.MODmodEM .\COMMEMI3D-2A.modemdat .\COMMEMI3D-2A.modemdat .\COMMEMI3D-2A.E .\COMMEMI3D-2A.modempar
